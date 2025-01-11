@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-gradient-left {
+  background: linear-gradient(to left, #ff0000, #0000ff);
+}
+.bg-gradient-right {
+  background: linear-gradient(to right, #ff0000, #0000ff);
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -9,8 +16,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: linear-gradient(to top, #ff0000, #0000ff);
+    --foreground: #0a0a0a;
   }
 }
 
